@@ -34,6 +34,6 @@ jobs:
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          SONAR_TOKEN: "squ_10992bbc81fa85dbecb8ec6a5e9530c4171e6566"
+          SONAR_HOST_URL: "https://50969218-7637-4e75-b807-cf7f40269ec1-10-244-5-172-9000.spch.r.killercoda.com"
         run: mvn -B verify sonar:sonar -Dmaven.test.failure.ignore=true
